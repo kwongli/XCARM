@@ -6,34 +6,37 @@
       "value": ""
     },
     "location": {
-      "value": ""
+      "value": "East Asia"
     },
     "sitecoreAdminPassword": {
-      "value": ""
+      "value": "Yw7YK7yYm3ik7AX"
     },
     "licenseXml": {
       "value": ""
     },
     "sqlServerLogin": {
-      "value": ""
+      "value": "sqladmin"
     },
     "sqlServerPassword": {
-      "value": ""
+      "value": "Yw7YK7yYm3ik7AX"
     },
     "siMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xpsingle/IdentityServer70325.scwdp.zip"
     },
     "singleMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xpsingle/Sitecore1030single.scwdp.zip"
     },
     "xcSingleMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xpsingle/Sitecore1030xp0xconnectsolr.scwdp.zip"
+    },
+    "solrConnectionString": {
+      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
     },
     "authCertificateBlob": {
       "value": ""
     },
     "authCertificatePassword": {
-      "value": ""
+      "value": "P@ssw0rd"
     }
   }
 }
