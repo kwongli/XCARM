@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "variables": {
     "webApiVersion": "2018-02-01",
-    "serverFarmApiVersion": "2018-02-01",
+    "serverFarmApiVersion": "2022-03-01",
     "dbApiVersion": "2014-04-01-preview",
 
     "sqlServerNameTidy": "[toLower(trim(parameters('sqlServerName')))]",
@@ -79,8 +79,8 @@
       "type": "string",
       "minLength": 1,
       "defaultValue": "S1"
-    },    
-    
+    },
+
     "shardMapManagerSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
@@ -171,9 +171,7 @@
           "use32BitWorkerProcess": false,
           "alwaysOn": true,
           "phpVersion": "",
-          "defaultDocuments": [
-            "index.html"
-          ]
+          "defaultDocuments": ["index.html"]
         }
       },
       "location": "[parameters('location')]",
@@ -200,9 +198,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('refDataSqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('refDataSqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
@@ -229,9 +225,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('reportingSqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('reportingSqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
@@ -258,9 +252,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('shardMapManagerSqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('shardMapManagerSqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
@@ -287,9 +279,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('shard0SqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('shard0SqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
@@ -316,9 +306,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('shard1SqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('shard1SqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
@@ -345,9 +333,7 @@
         {
           "name": "current",
           "type": "transparentDataEncryption",
-          "dependsOn": [
-            "[variables('maSqlDatabaseNameTidy')]"
-          ],
+          "dependsOn": ["[variables('maSqlDatabaseNameTidy')]"],
           "apiVersion": "2014-04-01",
           "properties": {
             "status": "Enabled"
