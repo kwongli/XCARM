@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "variables": {
     "webApiVersion": "2018-02-01",
-    "serverFarmApiVersion": "2018-02-01",
+    "serverFarmApiVersion": "2022-03-01",
     "dbApiVersion": "2014-04-01-preview",
     "applicationInsightsApiVersion": "2015-05-01",
     "certificateApiVersion": "2014-11-01",
@@ -38,7 +38,7 @@
       "pools": "prc-pools",
       "tasks": "prc-tasks",
       "forms": "forms",
-      "exmmaster" : "exmmaster"
+      "exmmaster": "exmmaster"
     }
   },
   "parameters": {
@@ -154,7 +154,7 @@
     "applicationInsightsCurrentBillingFeatures": {
       "type": "string",
       "defaultValue": "Basic",
-      "allowedValues": [ "Basic", "Application Insights Enterprise" ]
+      "allowedValues": ["Basic", "Application Insights Enterprise"]
     },
     "applicationInsightsDataVolumeCap": {
       "type": "string",
@@ -228,9 +228,7 @@
           "use32BitWorkerProcess": false,
           "alwaysOn": true,
           "phpVersion": "",
-          "defaultDocuments": [
-            "index.html"
-          ],
+          "defaultDocuments": ["index.html"],
           "metadata": [
             {
               "name": "CURRENT_STACK",
@@ -257,9 +255,7 @@
           "use32BitWorkerProcess": false,
           "alwaysOn": true,
           "phpVersion": "",
-          "defaultDocuments": [
-            "index.html"
-          ]
+          "defaultDocuments": ["index.html"]
         }
       },
       "location": "[parameters('location')]",
@@ -293,7 +289,9 @@
             "startIpAddress": "0.0.0.0"
           },
           "name": "AllowAllAzureIps",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ]
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ]
         },
         {
           "type": "databases",
@@ -308,9 +306,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('coreSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('coreSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -319,7 +315,9 @@
           ],
           "name": "[variables('coreSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').core]"
@@ -338,9 +336,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('masterSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('masterSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -349,7 +345,9 @@
           ],
           "name": "[variables('masterSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').master]"
@@ -368,9 +366,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('webSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('webSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -379,7 +375,9 @@
           ],
           "name": "[variables('webSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').web]"
@@ -398,9 +396,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('poolsSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('poolsSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -409,7 +405,9 @@
           ],
           "name": "[variables('poolsSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').pools]"
@@ -428,9 +426,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('tasksSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('tasksSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -439,7 +435,9 @@
           ],
           "name": "[variables('tasksSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').tasks]"
@@ -458,9 +456,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('formsSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('formsSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -469,7 +465,9 @@
           ],
           "name": "[variables('formsSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').forms]"
@@ -488,9 +486,7 @@
             {
               "name": "current",
               "type": "transparentDataEncryption",
-              "dependsOn": [
-                "[variables('exmMasterSqlDatabaseNameTidy')]"
-              ],
+              "dependsOn": ["[variables('exmMasterSqlDatabaseNameTidy')]"],
               "apiVersion": "2014-04-01",
               "properties": {
                 "status": "Enabled"
@@ -499,7 +495,9 @@
           ],
           "name": "[variables('exmMasterSqlDatabaseNameTidy')]",
           "location": "[parameters('location')]",
-          "dependsOn": [ "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]" ],
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerNameTidy'))]"
+          ],
           "tags": {
             "provider": "[variables('sitecoreTags').provider]",
             "logicalName": "[variables('sitecoreTags').exmmaster]"
