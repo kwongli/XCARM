@@ -64,6 +64,9 @@
     },
     "solrConnectionString": {
       "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
+    },
+    "xcSolrConnectionString": {
+      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
     }
   }
 }
