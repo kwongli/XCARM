@@ -6,61 +6,67 @@
       "value": ""
     },
     "location": {
-      "value": ""
+      "value": "East Asia"
     },
     "sitecoreAdminPassword": {
-      "value": ""
+      "value": "Yw7YK7yYm3ik7AX"
     },
     "licenseXml": {
       "value": ""
     },
     "repAuthenticationApiKey": {
-      "value": ""
+      "value": "{d432733e-ed91-472b-b0aa-2980a9c1c5e7}"
     },
     "sqlServerLogin": {
-      "value": ""
+      "value": "sqladmin"
     },
     "sqlServerPassword": {
-      "value": ""
+      "value": "Yw7YK7yYm3ik7AX"
     },
     "siMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/IdentityServer70325.scwdp.zip"
     },
     "cmMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/cm.scwdp.zip"
     },
     "cdMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/cd.scwdp.zip"
     },
     "prcMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/prc.scwdp.zip"
     },
     "xcRefDataMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1referencedata.scwdp.zip"
     },
     "xcCollectMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1collection.scwdp.zip"
     },
     "xcSearchMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1collectionsearch.scwdp.zip"
     },
     "cortexProcessingMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1cortexprocessing.scwdp.zip"
     },
     "cortexReportingMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1cortexreporting.scwdp.zip"
     },
     "maOpsMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1marketingautomation.scwdp.zip"
     },
     "maRepMsDeployPackageUrl": {
-      "value": ""
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1marketingautomationreporting.scwdp.zip"
     },
     "authCertificateBlob": {
       "value": ""
     },
     "authCertificatePassword": {
-      "value": ""
+      "value": "P@ssw0rd"
+    },
+    "solrConnectionString": {
+      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
+    },
+    "xcSolrConnectionString": {
+      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
     }
   }
 }
