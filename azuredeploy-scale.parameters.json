@@ -42,7 +42,7 @@
       "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1collection.scwdp.zip"
     },
     "xcSearchMsDeployPackageUrl": {
-      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1collectionsearchSOLR.scwdp.zip"
+      "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1collectionsearchsolr.scwdp.zip"
     },
     "cortexProcessingMsDeployPackageUrl": {
       "value": "https://saclarelab.blob.core.windows.net/sitecore103xp/xp1cortexprocessing.scwdp.zip"
