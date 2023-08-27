@@ -880,8 +880,8 @@
         "name": "[if(not(variables('useAse')), parameters('resourceSizes').cdHostingPlan.SkuName, parameters('resourceSizes').cdHostingPlanIsolated.SkuName)]",
         "capacity": "[if(not(variables('useAse')), parameters('resourceSizes').cdHostingPlan.SkuCapacity, parameters('resourceSizes').cdHostingPlanIsolated.SkuCapacity)]"
       },
-       "properties": {
-        "name": "[if(not(variables('useAse')), variables('hostingPlanProperties').cdProperties, variables('hostingPlanProperties').cdPropertiesWithASE)]",
+      "properties": {
+        "name": "[variables('cdHostingPlanNameTidy')]",
         "zoneRedundant": true
       },
       "location": "[parameters('location')]",
