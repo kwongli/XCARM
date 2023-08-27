@@ -332,8 +332,8 @@
             "ServiceObjectiveLevel": "S0"
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 1
           },
           "applicationInsightsPricePlan": {
@@ -1254,7 +1254,10 @@
           "family": "[parameters('resourceSizes').redisCache.SkuFamily]",
           "capacity": "[parameters('resourceSizes').redisCache.SkuCapacity]"
         },
-        "enableNonSslPort": false
+        "redisConfiguration": {},
+        "enableNonSslPort": false,
+        "redisVersion": "6",
+        "replicasPerMaster": 2
       },
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
