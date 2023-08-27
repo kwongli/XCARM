@@ -1259,6 +1259,7 @@
         "redisVersion": "6",
         "replicasPerMaster": 2
       },
+      "zones": ["1", "2", "3"],
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }
