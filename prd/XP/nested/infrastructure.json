@@ -5,7 +5,7 @@
     "webApiVersion": "2022-03-01",
     "serverFarmApiVersion": "2022-03-01",
     "dbApiVersion": "2014-04-01-preview",
-    "redisApiVersion": "2016-04-01",
+    "redisApiVersion": "2023-04-01",
     "appInsightsApiVersion": "2015-05-01",
     "certificateApiVersion": "2014-11-01",
 
