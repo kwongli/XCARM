@@ -281,7 +281,7 @@
             "SkuCapacity": 1
           },
           "cdHostingPlan": {
-            "SkuName": "P1v3",
+            "SkuName": "P2v2",
             "SkuCapacity": 2
           },
           "cdHostingPlanIsolated": {
