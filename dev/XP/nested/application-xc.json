@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "variables": {
     "resourcesApiVersion": "2018-05-01",
-    "webApiVersion": "2018-02-01",
+    "webApiVersion": "2022-03-01",
     "appInsightsApiVersion": "2015-05-01",
 
     "sqlServerFqdnTidy": "[toLower(trim(parameters('sqlServerFqdn')))]",
