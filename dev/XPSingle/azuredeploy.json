@@ -94,7 +94,7 @@
     "sqlDatabaseEdition": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "Premium"
+      "defaultValue": "Standard"
     },
     "sqlDatabaseMaxSize": {
       "type": "string",

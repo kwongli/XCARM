@@ -297,10 +297,10 @@
           "type": "databases",
           "apiVersion": "[variables('dbApiVersion')]",
           "properties": {
-            "edition": "[parameters('sqlDatabaseEdition')]",
+            "edition": "Premium",
             "collation": "[parameters('sqlDatabaseCollation')]",
-            "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-            "requestedServiceObjectiveName": "[parameters('sqlDatabaseServiceObjectiveLevel')]"
+            "maxSizeBytes": 536870912000,
+            "requestedServiceObjectiveName": "P1"
           },
           "resources": [
             {
