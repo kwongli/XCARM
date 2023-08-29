@@ -299,7 +299,7 @@
           "properties": {
             "edition": "Premium",
             "collation": "[parameters('sqlDatabaseCollation')]",
-            "maxSizeBytes": 536870912000,
+            "maxSizeBytes": "536870912000",
             "requestedServiceObjectiveName": "P1"
           },
           "resources": [
