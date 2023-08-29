@@ -297,10 +297,10 @@
           "type": "databases",
           "apiVersion": "[variables('dbApiVersion')]",
           "properties": {
-            "edition": "Premium",
+            "edition": "[parameters('sqlDatabaseEdition')]",
             "collation": "[parameters('sqlDatabaseCollation')]",
-            "maxSizeBytes": "536870912000",
-            "requestedServiceObjectiveName": "P1"
+            "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
+            "requestedServiceObjectiveName": "[parameters('sqlDatabaseServiceObjectiveLevel')]"
           },
           "resources": [
             {
@@ -357,10 +357,11 @@
           "type": "databases",
           "apiVersion": "[variables('dbApiVersion')]",
           "properties": {
-            "edition": "[parameters('sqlDatabaseEdition')]",
+            "edition": "Premium",
             "collation": "[parameters('sqlDatabaseCollation')]",
             "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-            "requestedServiceObjectiveName": "[parameters('sqlDatabaseServiceObjectiveLevel')]"
+            "requestedServiceObjectiveName": "P1",
+            "zoneRedundant": "true"
           },
           "resources": [
             {
