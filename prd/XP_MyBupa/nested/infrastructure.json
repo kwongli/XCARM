@@ -844,10 +844,16 @@
       "name": "[variables('siHostingPlanNameTidy')]",
       "apiVersion": "[variables('serverFarmApiVersion')]",
       "sku": {
-        "name": "[if(not(variables('useAse')), parameters('resourceSizes').siHostingPlan.SkuName, parameters('resourceSizes').siHostingPlanIsolated.SkuName)]",
-        "capacity": "[if(not(variables('useAse')), parameters('resourceSizes').siHostingPlan.SkuCapacity, parameters('resourceSizes').siHostingPlanIsolated.SkuCapacity)]"
+        "tier": "PremiumV3",
+        "name": "P1v3"
       },
-      "properties": "[if(not(variables('useAse')), variables('hostingPlanProperties').siProperties, variables('hostingPlanProperties').siPropertiesWithASE)]",
+      "properties": {
+        "name": "[variables('siHostingPlanNameTidy')]",
+        "workerSize": "6",
+        "workerSizeId": "6",
+        "numberOfWorkers": "3",
+        "zoneRedundant": true
+      },
       "location": "[parameters('location')]",
       "tags": {
         "provider": "[variables('sitecoreTags').provider]",

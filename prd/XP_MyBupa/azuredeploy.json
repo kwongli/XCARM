@@ -377,7 +377,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd-hp')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -412,7 +412,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd')]"
     },
     "prcWebAppName": {
       "type": "string",
