@@ -100,7 +100,7 @@
     },
     {
       "apiVersion": "[variables('resourcesApiVersion')]",
-      "name": "[concat(parameters('deploymentId'), '-mybupaasb-queues')]",
+      "name": "[concat(parameters('deploymentId'), 'asb-queues')]",
       "type": "Microsoft.Resources/deployments",
       "properties": {
         "mode": "Incremental",

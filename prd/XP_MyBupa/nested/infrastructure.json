@@ -184,7 +184,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
+      "defaultValue": "[concat(parameters('deploymentId'), 'redis')]"
     },
     "useApplicationInsights": {
       "type": "bool",
@@ -208,7 +208,7 @@
     "siHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-mybupasi-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), 'si-hp')]"
     },
     "cmHostingPlanName": {
       "type": "string",
@@ -218,7 +218,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), 'cd-hp')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -239,7 +239,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd')]"
+      "defaultValue": "[concat(parameters('deploymentId'), 'cd')]"
     },
     "prcWebAppName": {
       "type": "string",
