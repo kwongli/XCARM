@@ -324,10 +324,11 @@
       "location": "[parameters('location')]",
       "apiVersion": "[variables('dbApiVersion')]",
       "properties": {
-        "edition": "[parameters('sqlDatabaseEdition')]",
+        "edition": "Premium",
         "collation": "[parameters('sqlDatabaseCollation')]",
         "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-        "requestedServiceObjectiveName": "[parameters('sqlBasicDatabaseServiceObjectiveLevel')]"
+        "requestedServiceObjectiveName": "P1",
+        "zoneRedundant": "true"
       },
       "resources": [
         {
