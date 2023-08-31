@@ -208,7 +208,7 @@
     "siHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupasi-hp')]"
     },
     "cmHostingPlanName": {
       "type": "string",
@@ -218,7 +218,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd-hp')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -229,7 +229,7 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupsi')]"
     },
     "cmWebAppName": {
       "type": "string",
@@ -239,7 +239,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd')]"
     },
     "prcWebAppName": {
       "type": "string",

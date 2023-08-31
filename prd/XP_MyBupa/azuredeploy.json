@@ -319,7 +319,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
+      "defaultValue": "[concat(replace(parameters('deploymentId'),'-mybupa',''), '-redis')]"
     },
 
     "xcSearchIndexName": {
@@ -367,7 +367,7 @@
 
     "siHostingPlanName": {
       "type": "string",
-      "defaultValue": "[concat(parameters('deploymentId'), '-si-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupasi-hp')]"
     },
     "cmHostingPlanName": {
       "type": "string",
@@ -402,7 +402,7 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupasi')]"
     },
     "cmWebAppName": {
       "type": "string",
@@ -646,7 +646,7 @@
     "azureServiceBusNamespaceName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-asb')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupaasb')]"
     }
   },
   "resources": [

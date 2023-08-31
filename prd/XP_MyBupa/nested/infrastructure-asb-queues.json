@@ -28,7 +28,7 @@
         "azureServiceBusNamespaceName": {
             "type": "string",
             "minLength": 1,
-            "defaultValue": "[concat(parameters('deploymentId'), '-asb')]"
+            "defaultValue": "[concat(parameters('deploymentId'), '-mybuaasb')]"
         }
     },
     "variables": {

@@ -293,7 +293,7 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupasi')]"
     },
     "cmWebAppName": {
       "type": "string",
@@ -303,7 +303,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-mybupacd')]"
     },
     "prcWebAppName": {
       "type": "string",

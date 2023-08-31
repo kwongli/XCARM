@@ -92,7 +92,7 @@
     },
     "cdWebAppName": {
       "type": "string",
-      "defaultValue": "[coalesce(parameters('standard').cdWebAppName, concat(parameters('deploymentId'), '-cd'))]"
+      "defaultValue": "[coalesce(parameters('standard').cdWebAppName, concat(parameters('deploymentId'), '-mybupacd'))]"
     },
     "prcWebAppName": {
       "type": "string",
