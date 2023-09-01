@@ -184,7 +184,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), 'redis')]"
+      "defaultValue": "[concat(replace(parameters('deploymentId'),'mybupa',''), 'redis')]"
     },
     "useApplicationInsights": {
       "type": "bool",
