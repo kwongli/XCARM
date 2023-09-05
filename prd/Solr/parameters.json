@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "466e87b7-00d3-4bec-9e73-539a2182e691"
+        },
+        "name": {
+            "value": "bupasitecore-eas-prd-solr"
+        },
+        "location": {
+            "value": "East Asia"
+        },
+        "hostingPlanName": {
+            "value": "bupasitecore-eas-prd-solr-hp"
+        },
+        "serverFarmResourceGroup": {
+            "value": ""
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "PremiumV3"
+        },
+        "skuCode": {
+            "value": "P1V3"
+        },
+        "numberOfWorkers": {
+            "value": "3"
+        },
+        "workerSize": {
+            "value": "6"
+        },
+        "workerSizeId": {
+            "value": "6"
+        },
+        "currentStack": {
+            "value": "java"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "javaVersion": {
+            "value": "11"
+        },
+        "javaContainer": {
+            "value": "JAVA"
+        },
+        "javaContainerVersion": {
+            "value": "SE"
+        }
+    }
+}
