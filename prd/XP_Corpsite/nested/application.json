@@ -429,7 +429,7 @@
 
     "environmentType": {
       "type": "string",
-      "defaultValue": "Non-Production"
+      "defaultValue": "Prd"
     },
 
     "azureServiceBusNamespaceName": {

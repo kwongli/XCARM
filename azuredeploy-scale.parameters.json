@@ -63,10 +63,10 @@
       "value": "P@ssw0rd"
     },
     "solrConnectionString": {
-      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
+      "value": "https://bupasitecore-eas-prd-solr.azurewebsites.net/solr"
     },
     "xcSolrConnectionString": {
-      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
+      "value": "https://bupasitecore-eas-prd-solr.azurewebsites.net/solr"
     }
   }
 }

@@ -30,7 +30,7 @@
       "value": "https://saclarelab.blob.core.windows.net/sitecore103xpsingle/Sitecore1030xp0xconnectsolr.scwdp.zip"
     },
     "solrConnectionString": {
-      "value": "https://aapsitecoresolr01.azurewebsites.net/solr"
+      "value": "https://bupasitecore-eas-prd-solr.azurewebsites.net/solr"
     },
     "authCertificateBlob": {
       "value": ""
