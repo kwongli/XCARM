@@ -48,10 +48,10 @@
             "value": "11"
         },
         "javaContainer": {
-            "value": "JAVA"
+            "value": "TOMCAT"
         },
         "javaContainerVersion": {
-            "value": "SE"
+            "value": "9.0"
         }
     }
 }
