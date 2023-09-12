@@ -98,11 +98,7 @@
             "tags": {},
             "dependsOn": [],
             "properties": {
-                "name": "[parameters('hostingPlanName')]",
-                "workerSize": "[parameters('workerSize')]",
-                "workerSizeId": "[parameters('workerSizeId')]",
-                "numberOfWorkers": "[parameters('numberOfWorkers')]",
-                "zoneRedundant": true
+                "name": "[parameters('hostingPlanName')]"
             },
             "sku": {
                 "Tier": "[parameters('sku')]",
