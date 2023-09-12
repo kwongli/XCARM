@@ -115,82 +115,82 @@
     "coreSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-core-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-core')]"
     },
     "securitySqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-core-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-core')]"
     },
     "masterSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-master-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-master')]"
     },
     "webSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-web-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-web')]"
     },
     "reportingSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-reporting-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-reporting')]"
     },
     "poolsSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-pools-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-pools')]"
     },
     "tasksSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-tasks-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-tasks')]"
     },
     "formsSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-forms-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-forms')]"
     },
     "exmMasterSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-exmmaster-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-exmmaster')]"
     },
     "shardMapManagerSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-smm-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-smm')]"
     },
     "shard0SqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-shard0-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-shard0')]"
     },
     "shard1SqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-shard1-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-shard1')]"
     },
     "refDataSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-refdata-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-refdata')]"
     },
     "maSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ma-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-ma')]"
     },
     "processingEngineTasksSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-processingenginetasks-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-processingenginetasks')]"
     },
     "processingEngineStorageSqlDatabaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-processingenginestorage-db')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-db-sitecore-01-processingenginestorage')]"
     },
 
     "coreSqlDatabaseUserName": {
@@ -369,7 +369,7 @@
     "xcSingleHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-xc-single-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-xc-single')]"
     },
     "xcSingleHostingPlanSkuName": {
       "type": "string",
@@ -383,7 +383,7 @@
     "singleHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-single-hp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-single')]"
     },
     "singleHostingPlanSkuName": {
       "type": "string",
@@ -397,17 +397,17 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-as-sitecore-01-si')]"
     },
     "singleWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-single')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-as-sitecore-01-single')]"
     },
     "xcSingleWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-xc-single')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-as-sitecore-01-xc-single')]"
     },
 
     "siMsDeployPackageUrl": {

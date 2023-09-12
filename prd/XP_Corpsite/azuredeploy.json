@@ -377,7 +377,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), 'cd-hp')]"
+      "defaultValue": "[concat('bupa-prd-asp-sitecore-01-cropsitecd')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -412,7 +412,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), 'cd')]"
+      "defaultValue": "[concat('bupa-prd-as-sitecore-01-cropsitecd')]"
     },
     "prcWebAppName": {
       "type": "string",

@@ -319,7 +319,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(replace(parameters('deploymentId'),'mybupa',''), 'redis')]"
+      "defaultValue": "[concat('bupa-prd-redis-01-sitecore')]"
     },
 
     "xcSearchIndexName": {
@@ -377,7 +377,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), 'cd-hp')]"
+      "defaultValue": "[concat('bupa-prd-asp-sitecore-01-mybupacd')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -412,7 +412,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), 'cd')]"
+      "defaultValue": "[concat('bupa-prd-as-sitecore-01-mybupacd')]"
     },
     "prcWebAppName": {
       "type": "string",
