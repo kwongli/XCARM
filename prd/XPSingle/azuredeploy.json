@@ -70,7 +70,7 @@
     "sqlServerName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-sql')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-sql-01-sitecore')]"
     },
     "sqlServerLogin": {
       "type": "string",
