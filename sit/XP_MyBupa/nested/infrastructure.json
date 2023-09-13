@@ -883,15 +883,11 @@
       "name": "[variables('cdHostingPlanNameTidy')]",
       "apiVersion": "[variables('serverFarmApiVersion')]",
       "sku": {
-        "tier": "PremiumV3",
-        "name": "P1v3"
+        "tier": "Standard",
+        "name": "S1"
       },
       "properties": {
-        "name": "[variables('cdHostingPlanNameTidy')]",
-        "workerSize": "6",
-        "workerSizeId": "6",
-        "numberOfWorkers": "3",
-        "zoneRedundant": true
+        "name": "[variables('cdHostingPlanNameTidy')]"
       },
       "location": "[parameters('location')]",
       "kind": "",
@@ -1260,16 +1256,14 @@
       "location": "[parameters('location')]",
       "properties": {
         "sku": {
-          "name": "[parameters('resourceSizes').redisCache.SkuName]",
-          "family": "[parameters('resourceSizes').redisCache.SkuFamily]",
-          "capacity": "[parameters('resourceSizes').redisCache.SkuCapacity]"
+          "name": "Standard",
+          "family": "C",
+          "capacity": "1"
         },
         "redisConfiguration": {},
         "enableNonSslPort": false,
-        "redisVersion": "6",
-        "replicasPerMaster": 2
-      },
-      "zones": ["1", "2"],
+        "redisVersion": "6"        
+      },      
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }

@@ -29,15 +29,6 @@
         "skuCode": {
             "value": "P1V3"
         },
-        "numberOfWorkers": {
-            "value": "3"
-        },
-        "workerSize": {
-            "value": "6"
-        },
-        "workerSizeId": {
-            "value": "6"
-        },
         "currentStack": {
             "value": "java"
         },

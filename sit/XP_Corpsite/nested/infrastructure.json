@@ -184,7 +184,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(replace(parameters('deploymentId'),'mybupa',''), 'redis')]"
+      "defaultValue": "[concat(parameters('deploymentId'), 'redis2')]"
     },
     "useApplicationInsights": {
       "type": "bool",
@@ -883,15 +883,11 @@
       "name": "[variables('cdHostingPlanNameTidy')]",
       "apiVersion": "[variables('serverFarmApiVersion')]",
       "sku": {
-        "tier": "PremiumV3",
-        "name": "P1v3"
+        "tier": "Standard",
+        "name": "S1"
       },
       "properties": {
-        "name": "[variables('cdHostingPlanNameTidy')]",
-        "workerSize": "6",
-        "workerSizeId": "6",
-        "numberOfWorkers": "3",
-        "zoneRedundant": true
+        "name": "[variables('cdHostingPlanNameTidy')]"
       },
       "location": "[parameters('location')]",
       "kind": "",
@@ -1269,7 +1265,7 @@
         "redisVersion": "6",
         "replicasPerMaster": 2
       },
-      "zones": ["1", "2"],
+      "zones": ["1", "2", "3"],
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }

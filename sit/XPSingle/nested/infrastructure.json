@@ -300,7 +300,7 @@
             "edition": "Standard",
             "collation": "[parameters('sqlDatabaseCollation')]",
             "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-            "requestedServiceObjectiveName": "S1"            
+            "requestedServiceObjectiveName": "S1"
           },
           "resources": [
             {
@@ -360,7 +360,7 @@
             "edition": "Standard",
             "collation": "[parameters('sqlDatabaseCollation')]",
             "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-            "requestedServiceObjectiveName": "S1"            
+            "requestedServiceObjectiveName": "S1"
           },
           "resources": [
             {
@@ -450,7 +450,7 @@
             "edition": "Standard",
             "collation": "[parameters('sqlDatabaseCollation')]",
             "maxSizeBytes": "[parameters('sqlDatabaseMaxSize')]",
-            "requestedServiceObjectiveName": "S1"            
+            "requestedServiceObjectiveName": "S1"
           },
           "resources": [
             {
