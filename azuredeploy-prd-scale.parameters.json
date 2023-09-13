@@ -63,10 +63,10 @@
       "value": "Yw7YK7yYm3ik7AX"
     },
     "solrConnectionString": {
-      "value": "https://bupa-prd-as-sitecore-01-solr.azurewebsites.net/solr"
+      "value": ""
     },
     "xcSolrConnectionString": {
-      "value": "https://bupa-prd-as-sitecore-01-solr.azurewebsites.net/solr"
+      "value": ""
     }
   }
 }
