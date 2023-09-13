@@ -6,13 +6,13 @@
             "value": "466e87b7-00d3-4bec-9e73-539a2182e691"
         },
         "name": {
-            "value": "bupa-prd-as-sitecore-01-solr"
+            "value": "bupa-uat-as-sitecore-01-solr"
         },
         "location": {
             "value": "East Asia"
         },
         "hostingPlanName": {
-            "value": "bupa-prd-asp-sitecore-01-solr"
+            "value": "bupa-uat-asp-sitecore-01-solr"
         },
         "serverFarmResourceGroup": {
             "value": ""
