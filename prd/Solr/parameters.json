@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscriptionId": {
-            "value": "466e87b7-00d3-4bec-9e73-539a2182e691"
+            "value": "a196592f-0f20-486c-8e3b-ab815a9ecced"
         },
         "name": {
             "value": "bupa-prd-as-sitecore-01-solr"
