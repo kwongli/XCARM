@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscriptionId": {
-            "value": "25c72a87-0420-4e54-8f8d-e1b722cfb388"
+            "value": "466e87b7-00d3-4bec-9e73-539a2182e691"
         },
         "name": {
             "value": "bupa-uat-as-sitecore-01-solr"
