@@ -29,15 +29,6 @@
         "skuCode": {
             "type": "string"
         },
-        "workerSize": {
-            "type": "string"
-        },
-        "workerSizeId": {
-            "type": "string"
-        },
-        "numberOfWorkers": {
-            "type": "string"
-        },
         "currentStack": {
             "type": "string"
         },
