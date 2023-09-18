@@ -883,8 +883,8 @@
       "name": "[variables('cdHostingPlanNameTidy')]",
       "apiVersion": "[variables('serverFarmApiVersion')]",
       "sku": {
-        "tier": "PremiumV3",
-        "name": "P1v3"
+        "tier": "PremiumV2",
+        "name": "P1v2"
       },
       "properties": {
         "name": "[variables('cdHostingPlanNameTidy')]",
