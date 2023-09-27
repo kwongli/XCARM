@@ -1,10 +1,7 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "type": "string"
-        },
         "name": {
             "type": "string"
         },
@@ -12,9 +9,6 @@
             "type": "string"
         },
         "hostingPlanName": {
-            "type": "string"
-        },
-        "serverFarmResourceGroup": {
             "type": "string"
         },
         "alwaysOn": {
@@ -73,7 +67,7 @@
                     "alwaysOn": "[parameters('alwaysOn')]",
                     "ftpsState": "[parameters('ftpsState')]"
                 },
-                "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', resourceGroup().Name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
                 "clientAffinityEnabled": true,
                 "virtualNetworkSubnetId": null,
                 "httpsOnly": true,
@@ -88,9 +82,7 @@
             "kind": "",
             "tags": {},
             "dependsOn": [],
-            "properties": {
-                "name": "[parameters('hostingPlanName')]"
-            },
+            "properties": {},
             "sku": {
                 "Tier": "[parameters('sku')]",
                 "Name": "[parameters('skuCode')]"

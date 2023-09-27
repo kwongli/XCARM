@@ -40,22 +40,7 @@
         }
     },
     "variables": {},
-    "resources": [
-        {
-            "apiVersion": "2022-03-01",
-            "name": "[parameters('hostingPlanName')]",
-            "type": "Microsoft.Web/serverfarms",
-            "location": "[parameters('location')]",
-            "kind": "",
-            "tags": {},
-            "dependsOn": [],
-            "properties": {},
-            "sku": {
-                "Tier": "[parameters('sku')]",
-                "Name": "[parameters('skuCode')]"
-            }
-        },
-        
+    "resources": [   
         {
             "apiVersion": "2022-03-01",
             "name": "[parameters('name')]",
@@ -88,7 +73,20 @@
                 "httpsOnly": true,
                 "publicNetworkAccess": "Enabled"
             }
-        }
-
+        },
+        {
+            "apiVersion": "2022-03-01",
+            "name": "[parameters('hostingPlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[parameters('location')]",
+            "kind": "",
+            "tags": {},
+            "dependsOn": [],
+            "properties": {},
+            "sku": {
+                "Tier": "[parameters('sku')]",
+                "Name": "[parameters('skuCode')]"
+            }
+        }     
     ]
 }

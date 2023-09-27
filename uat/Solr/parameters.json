@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": "466e87b7-00d3-4bec-9e73-539a2182e691"
-        },
         "name": {
             "value": "bupa-uat-as-sitecore-01-solr"
         },
@@ -13,9 +10,6 @@
         },
         "hostingPlanName": {
             "value": "bupa-uat-asp-sitecore-01-solr"
-        },
-        "serverFarmResourceGroup": {
-            "value": ""
         },
         "alwaysOn": {
             "value": true
