@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "type": "string"
-        },
         "name": {
             "type": "string"
         },
@@ -85,7 +82,7 @@
                     "alwaysOn": "[parameters('alwaysOn')]",
                     "ftpsState": "[parameters('ftpsState')]"
                 },
-                "serverFarmId": "[resourceId(parameters('subscriptionId'),resourceGroup().Name, 'Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
                 "clientAffinityEnabled": true,
                 "virtualNetworkSubnetId": null,
                 "httpsOnly": true,
