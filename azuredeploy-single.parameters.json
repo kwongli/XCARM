@@ -9,7 +9,7 @@
       "value": "East Asia"
     },
     "sitecoreAdminPassword": {
-      "value": "Yw7YK7yYm3ik7AX"
+      "value": ""
     },
     "licenseXml": {
       "value": ""
@@ -18,7 +18,7 @@
       "value": "sqladmin"
     },
     "sqlServerPassword": {
-      "value": "Yw7YK7yYm3ik7AX"
+      "value": ""
     },
     "siMsDeployPackageUrl": {
       "value": "https://saclarelab.blob.core.windows.net/sitecore103xpsingle/IdentityServer70325.scwdp.zip"
@@ -36,7 +36,7 @@
       "value": ""
     },
     "authCertificatePassword": {
-      "value": "Yw7YK7yYm3ik7AX"
+      "value": ""
     }
   }
 }
