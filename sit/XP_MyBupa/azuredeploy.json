@@ -377,7 +377,7 @@
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat('bupa-sit-asp-sitecore-01-mybupacd')]"
+      "defaultValue": "[concat('bupa-sit-asp-sitecore-01-mybupasitcd')]"
     },
     "prcHostingPlanName": {
       "type": "string",
@@ -412,7 +412,7 @@
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat('bupa-sit-as-sitecore-01-mybupacd')]"
+      "defaultValue": "[concat('bupa-sit-as-sitecore-01-mybupasitcd')]"
     },
     "prcWebAppName": {
       "type": "string",

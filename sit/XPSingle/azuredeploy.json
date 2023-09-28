@@ -336,7 +336,7 @@
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ai')]"
+      "defaultValue": "[concat('sitecore-rg-eas-sit-ai-01')]"
     },
     "applicationInsightsLocation": {
       "type": "string",
@@ -354,7 +354,7 @@
     "applicationInsightsPricePlan": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ai-pp')]"
+      "defaultValue": "[concat('sitecore-rg-eas-sit-ai-01-pp')]"
     },
     "applicationInsightsCurrentBillingFeatures": {
       "type": "string",
@@ -369,7 +369,7 @@
     "xcSingleHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-xc-single')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-others')]"
     },
     "xcSingleHostingPlanSkuName": {
       "type": "string",
@@ -383,7 +383,7 @@
     "singleHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-single')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-asp-sitecore-01-cm')]"
     },
     "singleHostingPlanSkuName": {
       "type": "string",
@@ -402,7 +402,7 @@
     "singleWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-as-sitecore-01-single')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-as-sitecore-01-mybupasitcm')]"
     },
     "xcSingleWebAppName": {
       "type": "string",
